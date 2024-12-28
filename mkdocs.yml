@@ -211,16 +211,6 @@ extra_javascript:
   # - js/heti.js
 
 plugins:
-  - blogging:
-      locale: en
-      dirs:
-        - Blogs/posts
-      theme:
-        name: card
-      features:
-        tags:
-          index_page: tags/
-          insert: top
   - search
   - callouts
   - ezlinks

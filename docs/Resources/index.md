@@ -10,5 +10,5 @@ comments: false
 {{ BEGIN_TOC }}
 
 - "学习资源":
-    - "杂乱" : Resourece
+    - "杂乱" : Resource
 {{ END_TOC }}

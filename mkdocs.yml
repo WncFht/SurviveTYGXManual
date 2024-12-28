@@ -255,4 +255,5 @@ not_in_nav: links.md
 
 nav:
   - Home: index.md
-
+  - 学习经验: Experience/index.md
+  - 学习资料: Resources/index.md

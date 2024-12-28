@@ -146,32 +146,6 @@ validation:
     absolute_links: ignore
     unrecognized_links: ignore
 
-extra:
-  social:
-    # - icon: fontawesome/brands/twitter
-    #   link: https://twitter.com/
-    - icon: /fontawesome/brands/github
-      link: https://github.com/WncFht
-      name: GitHub
-    - icon: fontawesome/brands/bilibili
-      link: https://space.bilibili.com/496058922?spm_id_from=333.1007.0.0
-      name: Bilibili
-    - icon: /fontawesome/brands/zhihu
-      link: https://www.zhihu.com/people/fht-64
-      name: Zhihu
-    - icon: /fontawesome/brands/qq
-      link: assets/images/qq.jpg
-      name: QQ
-    - icon: /fontawesome/brands/weixin
-      link: assets/images/WeChat.jpg
-      name: WeChat
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:2130212584@qq.com
-      name: Email
-  # analytics:
-  #   provider: google
-  #   property: YOUR-ANALYTICS-ID
-
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   # - https://cdn.tonycrane.cc/utils/katex.min.css
@@ -219,27 +193,15 @@ plugins:
   - statistics:
       words_per_minute: 200
   - heti
-  # - include_dir_to_nav:
-  #     sort_file: true
-  #     sort_directory: true
   - toc
-  # - obsidian_support 不知道什么原因构建速度很慢，暂时不用
-  # - rss
   - git-revision-date-localized:
       type: datetime
       timezone: Asia/Shanghai
       enable_creation_date: true
       exclude:
         - index.md
-  - mkdocs-video:
-      video_muted: True
-      video_controls: True
-      mark: "video"
-  # - changelog
-  # - mkdocs-jupyter:
-  #     include_source: True
-  #     execute: False
-  #     ignore: ["*.py"]
+
+
 
 not_in_nav: links.md
 

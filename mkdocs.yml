@@ -4,7 +4,6 @@ site_description: 天元公学生存指南
 site_author: wnc
 repo_name: 天元公学生存指南
 repo_url: https://github.com/WncFht/survivetygx/
-edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -13,7 +12,6 @@ theme:
   icon:
     logo: material/coffee
     repo: fontawesome/brands/git-alt
-    edit: material/pencil
 
   features:
     - content.code.annotate

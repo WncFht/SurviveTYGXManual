@@ -4,8 +4,7 @@
 
 希望给高中的你一些帮助!
 
-> [! note]+
-> 为什么是这个名字？
+> [!note]+ 为什么是这个名字？
 > 受到 [上海交通大学生存手册](https://survivesjtu.gitbook.io/survivesjtumanual) 启发，遂拟定此名。
 
 本网站目前包括以下部分:

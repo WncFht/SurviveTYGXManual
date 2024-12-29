@@ -17,3 +17,7 @@ icon: material/home
 天元公学生存指南
 </span>
 </h1>
+
+<span style="display: block; text-align: center; font-size: 18px;">
+[:octicons-info-16: 序言](./about.md)
+</span>

@@ -8,4 +8,4 @@ mkdocs-git-revision-date-localized-plugin
 rich # for mkdocs-toc-plugin
 mkdocs-callouts
 mkdocs-changelog-plugin
-mkdocs-ezlinks-plugin
+mkdocs-minify-plugin

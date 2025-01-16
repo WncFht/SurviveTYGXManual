@@ -144,25 +144,21 @@ validation:
     unrecognized_links: ignore
 
 extra_css:
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
-  # - https://cdn.tonycrane.cc/utils/katex.min.css
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
+  - https://cdn.tonycrane.cc/utils/katex.min.css
   - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
   - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
   - css/custom.css
   - css/tasklist.css
   - css/card.css
   - css/flink.css
-  # - css/heti.css
-  # - css/changelog_extra.css
-  # - css/flod_toc.css
-  # - css/grid cards.css # 好用的但还没用
-  # - css/extra.css
-  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - css/extra.css
+  - css/fold_toc.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 
 extra_javascript:
   - js/katex.js
   - js/mathjax.js
-  - js/tablesort.js
   - js/toc.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
@@ -184,13 +180,28 @@ extra_javascript:
 plugins:
   - search
   - callouts
-  - ezlinks
   - glightbox:
       width: 80%
   - statistics:
       words_per_minute: 200
   - heti
   - toc
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      js_files:
+        - js/katex.js
+        - js/mathjax.js
+        - js/toc.js
+      css_files:
+        - css/custom.css
+        - css/tasklist.css
+        - css/card.css
+        - css/flink.css
+        - css/extra.css
+        - css/fold_toc.css
+        - css/grid cards.css
   - git-revision-date-localized:
       type: datetime
       timezone: Asia/Shanghai
@@ -198,11 +209,27 @@ plugins:
       exclude:
         - index.md
 
-
-
-not_in_nav: links.md
+not_in_nav: about.md
 
 nav:
   - Home: index.md
-  - 学习经验: Experience/index.md
-  - 学习资料: Resources/index.md
+  - 学习经验:
+      - Experience\index.md
+      - Experience\English\24_fht.md
+      - Experience\Math\24_fht.md
+      - Experience\Physics\24_fht.md
+      - Experience\Technology\24_fht.md
+  - 学习资料:
+      - Resources\index.md
+      - Resources\Others\How-To-Find.md
+      - Resources\Course\Biology.md
+      - Resources\Course\Chemistry.md
+      - Resources\Course\Chinese.md
+      - Resources\Course\English.md
+      - Resources\Course\Geography.md
+      - Resources\Course\History.md
+      - Resources\Course\Math.md
+      - Resources\Course\Physics.md
+      - Resources\Course\Politics.md
+      - Resources\Course\Technology.md
+      - Resources\Others\Resource.md
